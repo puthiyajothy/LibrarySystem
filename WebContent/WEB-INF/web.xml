@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Lms</display-name>
+  <servlet>
+    <servlet-name>BookControllerServ</servlet-name>
+    <servlet-class>com.controller.BookControllerServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookControllerServ</servlet-name>
+    <url-pattern>/addbooks</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+    <servlet-name>SubclassificationController</servlet-name>
+    <servlet-class>com.controller.SubclassificationController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubclassificationController</servlet-name>
+    <url-pattern>/subclassification</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MainclassificationController</servlet-name>
+    <servlet-class>com.controller.MainclassificationController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainclassificationController</servlet-name>
+    <url-pattern>/mainclassification</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletebook</servlet-name>
+    <servlet-class>com.controller.BookDeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletebook</servlet-name>
+    <url-pattern>/deletebook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Subclassificationdelete</servlet-name>
+    <servlet-class>com.controller.SubclassificationDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Subclassificationdelete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Mainclassificationdelete</servlet-name>
+    <servlet-class>com.controller.MainclassificationDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Mainclassificationdelete</servlet-name>
+    <url-pattern>/deletemclass</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
